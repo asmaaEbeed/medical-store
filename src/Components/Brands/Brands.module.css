@@ -1,0 +1,23 @@
+.brandsSection {
+  background-color: var(--warning-50);
+}
+
+.brandsRow {
+  margin: 0;
+}
+
+.brandCol {
+  padding: 10px;
+}
+
+.brandImage {
+  width: 100%;
+  max-width: 96px;
+  height: auto;
+  object-fit: contain;
+}
+
+.brandImage:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

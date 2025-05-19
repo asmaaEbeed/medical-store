@@ -1,0 +1,186 @@
+/* ============= Slider in Hero============= */
+.topNavigate {
+  background-color: #EFF4F8;
+  
+}
+.navLink {
+  color: #06274A !important;
+}
+.divider {
+  margin: 0 10px;
+}
+.sliderBackground {
+    /* background: linear-gradient(180deg, #FFA70A 0%, #FF9B5C 40%, #3C6C66 60%, #fff 100%); */
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+    color: #06274A;
+  }
+
+  /* ================ Sidebar =============== */
+  .sideNav {
+    background-color: #EFF4F8;
+    /* background-color: var(--warning-50); */
+
+    color: #06274A;
+
+  }
+  /* .textShadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #06274A;
+
+  } */
+   /* 3D Text Effect */
+   .stylishTitle {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 3px 3px 0px #ff7e5f, 6px 6px 0px #feb47b, 0 0 10px #ff7e5f, 0 0 20px #feb47b;
+    animation: glow 1.5s infinite alternate;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Glowing Animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 3px 3px 0px #ff7e5f, 6px 6px 0px #feb47b, 0 0 10px #ff7e5f, 0 0 20px #feb47b;
+    }
+    100% {
+      text-shadow: 3px 3px 0px #ff7e5f, 6px 6px 0px #feb47b, 0 0 15px #ff7e5f, 0 0 30px #feb47b, 0 0 40px #ff7e5f;
+    }
+  }
+  
+  /* Icon Styling */
+  .iconWrapper {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.8);
+    margin: 0 12px;
+    font-size: 1.8rem;
+    color: white;
+    animation: pulse 1.5s infinite alternate;
+  }
+  
+  /* Icon Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 126, 95, 0.8);
+    }
+    100% {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px rgba(255, 126, 95, 1);
+    }
+  }
+  /* ============price range========== */ 
+
+  .priceRange::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #5AA4E5 var(--value-percent), #e9ecef var(--value-percent));
+    color: #06274A;
+  }
+  /* ================cards================= */
+  
+  .productCard {
+    animation: fadeInUp 0.5s ease forwards;
+    transform: translateY(30px);
+    opacity: 0;
+    color: #06274A !important;
+
+  }
+  
+  .productImage {
+    transition: transform 0.5s ease;
+  }
+  
+  .badge {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .iconMenu {
+    position: absolute;
+    top: 30%;
+    right: -50px;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+    z-index: 2;
+  }
+  
+  .cardOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .cardOverlayOutStock {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, rgba(37, 37, 37, 0.5), rgba(123, 123, 123, 0.7));
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  .icon {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .icon:hover {
+    color: #FFA70F;
+    transform: scale(1.2);
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .productCard:hover .cardOverlay {
+    opacity: 1;
+  }
+  
+  .productCard:hover .iconMenu {
+    right: 20px;
+  }
+  
+  .productCard:hover .badge {
+    transform: rotate(0);
+  }
+
+.categoryBadge {
+  /* background-color: var(--warning-400) !important; */
+  background-color: #5AA4E5 !important;
+}
+  /* =============Modal ================ */
+
+.quickViewModal {
+  backdrop-filter: blur(5px);
+}
+
+.quickViewModal :global(.modal-content) {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.whatsappIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 40px !important;
+  color: #00a93e;
+  transition: all 0.3s ease;
+}
+.whatsappIcon:hover {
+  transform: scale(1.3);
+}
+
+  

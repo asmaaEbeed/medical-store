@@ -1,0 +1,7 @@
+.paymentImg {
+    width: 60px;
+}
+.buyConfirmBody {
+    max-height: 310px;
+    overflow-y: auto
+}

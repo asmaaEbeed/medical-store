@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+:root {
+  --transition-speed: 0.3s;
+  --primary-color: #0056b3;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --text-muted: #6c757d;
+}
+
+/* Header Styles */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/about/about-us-parallax.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80vh;
+  font-family: "Geologica", serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+}
+
+.smallText {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.divider {
+  margin: 0 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Services Section */
+.services {
+  margin-top: -100px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.serviceCard {
+  padding: 1.5rem;
+  transition: all var(--transition-speed) ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+}
+
+.icons {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: all var(--transition-speed) ease;
+  background: linear-gradient(135deg, var(--primary-color), #007bff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 86, 179, 0.2);
+}
+
+.cardBody {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all var(--transition-speed) ease;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardBody:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icons:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.cardTitle {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.cardDescription {
+  margin: 1rem 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.viewMore {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-speed) ease;
+  color: var(--primary-color);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.viewMore::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.viewMore:hover::after {
+  width: 100%;
+}
+
+/* Image Sections */
+.firstItem,
+.fourthItem {
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  transition: all var(--transition-speed) ease;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.firstItem {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../assets/images/log.jpg');
+}
+
+.fourthItem {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../assets/11.jpg');
+}
+
+.secondItem {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contentBox {
+  margin: 2.5rem;
+  height: 70vh;
+  padding: 3rem;
+}
+
+.contentBox h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.contentBox p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.checkList {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.checkList li {
+  padding-left: 2rem;
+  position: relative;
+  margin: 1rem 0;
+  color: var(--text-color);
+}
+
+.checkList li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+.slideUp {
+  animation: slideUp 0.8s ease-out;
+}
+
+.slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .mainTitle {
+    font-size: 3rem;
+  }
+
+  .contentBox {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .firstItem,
+  .fourthItem {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+
+  .services {
+    margin-top: -50px;
+  }
+
+  .cardBody {
+    padding: 2rem;
+  }
+
+  .checkList {
+    font-size: 1.1rem;
+  }
+
+  .contentBox h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .services {
+    margin-top: -30px;
+  }
+
+  .cardBody {
+    padding: 1.5rem;
+  }
+
+  .contentBox {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .contentBox h3 {
+    font-size: 1.8rem;
+  }
+}

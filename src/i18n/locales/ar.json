@@ -1,0 +1,30 @@
+{
+  "common": {
+    "search": "البحث عن المنتجات...",
+    "priceRange": "نطاق السعر",
+    "filterBy": "تصفية حسب",
+    "allProducts": "جميع المنتجات",
+    "latestProducts": "أحدث المنتجات",
+    "popularProducts": "المنتجات الشائعة",
+    "saleProducts": "المنتجات المعروضة للبيع"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "products": "المنتجات",
+    "categories": "الفئات",
+    "contact": "اتصل بنا",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "dashboard": "لوحة التحكم",
+    "blog": "المدونة",
+    "contactUs": "اتصل بنا",
+    "donation": "تبرع"
+
+  },
+  "home": {
+    "featuredProducts": "المنتجات المميزة"
+  }
+} 

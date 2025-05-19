@@ -1,0 +1,190 @@
+.cartBtn {
+  width: 38px;
+  height: 38px;
+}
+
+.cartCount {
+  top: -4px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px !important;
+  height: 20px !important;
+  border: 0 solid transparent;
+  border-radius: 50%;
+  font-family: Geologica, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  background-color: #6ebbff;
+  color: #fff;
+  position: absolute;
+  z-index: 1000 !important;
+}
+
+@media (max-width: 768px) {
+  .cartCount {
+    display: none;
+  }
+}
+
+.navLink {
+  border-top: 2px solid #dee2e6 !important;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.activeLink {
+  border-top: 2px solid #10235e !important;
+  font-weight: 700;
+}
+
+.navContainer a:hover {
+  border-top: 2px solid #10235e !important;
+}
+
+.navContainer .readMore {
+  border-top: 0 !important;
+}
+
+.navContainer .readMore:hover {
+  border-top: 0 !important;
+}
+
+/* When nav position is fixed */
+body[data-nav-position="fixed"] .navigationContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(255 255 255 / 84%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add padding to body when nav is fixed to prevent content jump */
+body[data-nav-position="fixed"] {
+  padding-top: 158.8px; /* Adjust this value to match your navbar height */
+}
+
+/* When nav position is relative */
+body[data-nav-position="relative"] .navigationContainer {
+  position: relative;
+}
+
+body[data-nav-position="relative"] {
+  padding-top: 0;
+}
+
+.mt_2_neg {
+  margin-top: -2px;
+}
+
+.userIcon {
+  font-size: 20px;
+  color: #10235e; /* Matches text-primary-1000 */
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.userIcon:hover {
+  color: #6ebbff; /* Matches cart count background for consistency */
+}
+
+/* Search */
+.dropMenu {
+  top: 40px;
+}
+
+.searchResultImage {
+  width: 90px;
+}
+
+.dropMenuUser {
+  top: 40px;
+  width: 200px;
+  right: 0;
+}
+
+.userIconContainer:hover .dropMenuUser {
+  display: block !important;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #495057;
+  width: 100%;
+  text-align: left;
+}
+
+.menuItem:hover {
+  background: #f8f9fa;
+  color: #007bff;
+}
+
+.menuItem.active {
+  background: #e7f1ff;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.menuItem.logout {
+  color: #dc3545;
+  margin-top: 1rem;
+}
+
+.menuItem.logout:hover {
+  background: #fff5f5;
+}
+
+[dir="rtl"] .searchIcon {
+  left: 0;
+}
+
+.searchResult {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchResult:hover {
+  background-color: #fffbf5;
+  color: #fff;
+}
+
+/* cart Dropmenu */
+.dropMenuCart {
+  top: 37px;
+  width: 300px;
+  right: -20px;
+  max-height: 400px !important;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.cartBtn:hover ~ .dropMenuCart,
+.dropMenuCart:hover {
+  display: block !important;
+}
+
+.dropMenuCart li:hover ~ .dropMenuCart {
+  display: block !important;
+}
+
+.cartDropDownImage {
+  width: 60px;
+}

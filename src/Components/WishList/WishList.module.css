@@ -1,0 +1,222 @@
+.wishlistPage {
+  padding: 1rem 0;
+  min-height: 90vh;
+}
+
+.header {
+  border-radius: 12px 12px 0 0;
+}
+
+.badge {
+  background-color: var(--primary-100);
+  color: var(--primary-900);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.15);
+}
+
+.card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 5px 12px rgba(33, 150, 243, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(33, 150, 243, 0.2),
+              0 4px 8px rgba(33, 150, 243, 0.1);
+}
+
+.productImage {
+  padding: 2rem;
+  transition: all 0.5s ease;
+
+}
+
+.card:hover .productImage {
+  transform: scale(1.05);
+  
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.backButton {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--warning-400);
+  color: black;
+  background: transparent;
+  z-index: 1;
+  transition: all 0.35s;
+}
+
+.backButton:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--secondary-50);
+  transition: all .35s;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+.backButton:hover {
+  color: var(--warning-400) !important;
+}
+
+.backButton:hover:after {
+  width: 100%;
+  outline: 1px solid var(--warning-400) !important;
+}
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.productTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary-800);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+  height: 2.4rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card:hover .productTitle {
+  color: var(--primary-600);
+}
+
+.productPrice {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--warning-400);
+  margin-bottom: 1.5rem;
+}
+
+.addToCartBtn {
+  background: var(--warning-400);
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  width: 100%;
+}
+
+.addToCartBtn:hover {
+  background: var(--warning-400);
+  transform: translateY(-2px);
+}
+
+.removeBtn {
+  background: transparent;
+  border: 1px solid var(--secondary-300);
+  color: var(--secondary-700);
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  width: 100%;
+}
+
+.removeBtn:hover {
+  background: var(--secondary-100);
+  border-color: var(--secondary-400);
+  color: var(--secondary-900);
+}
+
+
+/* ////////////// */
+.wishlistPage {
+  padding: 20px 0;
+  /* background-color: #f9f9f9; */
+  min-height: 80vh;
+}
+
+.card {
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 15px 20px;
+}
+
+.productImage {
+  transition: transform 0.5s ease;
+  background-color: #fff;
+}
+
+.card:hover .productImage {
+  transform: scale(1.05);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.badge {
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #ffc107;
+  color: white;
+  transform: translateX(-5px);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .buttonGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .buttonGroup button {
+    width: 100%;
+  }
+}

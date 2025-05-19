@@ -1,0 +1,132 @@
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Bootstrap RTL Overrides */
+[dir="rtl"] .me-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
+[dir="rtl"] .ms-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+[dir="rtl"] .me-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+[dir="rtl"] .ms-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+[dir="rtl"] .me-4 { margin-right: 0 !important; margin-left: 1.5rem !important; }
+[dir="rtl"] .ms-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+[dir="rtl"] .me-5 { margin-right: 0 !important; margin-left: 3rem !important; }
+[dir="rtl"] .ms-5 { margin-left: 0 !important; margin-right: 3rem !important; }
+
+[dir="rtl"] .pe-2 { padding-right: 0 !important; padding-left: 0.5rem !important; }
+[dir="rtl"] .ps-2 { padding-left: 0 !important; padding-right: 0.5rem !important; }
+[dir="rtl"] .pe-3 { padding-right: 0 !important; padding-left: 1rem !important; }
+[dir="rtl"] .ps-3 { padding-left: 0 !important; padding-right: 1rem !important; }
+[dir="rtl"] .pe-4 { padding-right: 0 !important; padding-left: 1.5rem !important; }
+[dir="rtl"] .ps-4 { padding-left: 0 !important; padding-right: 1.5rem !important; }
+[dir="rtl"] .pe-5 { padding-right: 0 !important; padding-left: 3rem !important; }
+[dir="rtl"] .ps-5 { padding-left: 0 !important; padding-right: 3rem !important; }
+
+/* Form Elements */
+[dir="rtl"] .input-group > .form-control:not(:last-child) {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+[dir="rtl"] .input-group > .input-group-text:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Navigation */
+[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Cards */
+[dir="rtl"] .card {
+  text-align: right;
+}
+
+/* Icons */
+[dir="rtl"] .icon-left {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Lists */
+[dir="rtl"] ul {
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+
+/* Tables */
+[dir="rtl"] .table th,
+[dir="rtl"] .table td {
+  text-align: right;
+}
+
+/* Pagination */
+[dir="rtl"] .pagination {
+  padding-right: 0;
+}
+
+/* Custom Components */
+[dir="rtl"] .price-range {
+  direction: rtl;
+}
+
+/* Animations */
+[dir="rtl"] .slide-in-left {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Grid System */
+[dir="rtl"] .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Flexbox Utilities */
+[dir="rtl"] .justify-content-start {
+  justify-content: flex-end !important;
+}
+
+[dir="rtl"] .justify-content-end {
+  justify-content: flex-start !important;
+}
+
+/* Font Adjustments */
+[dir="rtl"] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Custom Scrollbar */
+[dir="rtl"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[dir="rtl"] ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+[dir="rtl"] ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Print Styles */
+@media print {
+  [dir="rtl"] {
+    direction: rtl;
+  }
+} 

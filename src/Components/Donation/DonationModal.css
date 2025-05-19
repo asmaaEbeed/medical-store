@@ -1,0 +1,26 @@
+/* Floating button styles - Updated for icon-only circular button */
+.float-donate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #102F51, #1a4980);
+  color: white;
+  width: 50px;  /* Fixed width for circular button */
+  height: 50px; /* Fixed height for circular button */
+  border-radius: 50%; /* Make it perfectly circular */
+  box-shadow: 0 4px 15px rgba(16, 47, 81, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0; /* Remove padding */
+}
+
+.float-donate-button:hover {
+  box-shadow: 0 6px 20px rgba(16, 47, 81, 0.4);
+  transform: translateY(-2px);
+}
+
+.float-donate-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(16, 47, 81, 0.3);
+}

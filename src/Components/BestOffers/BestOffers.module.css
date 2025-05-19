@@ -1,0 +1,185 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--primary-600), var(--warning-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.navButton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: var(--primary-600);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:hover {
+  background: var(--primary-600);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+}
+
+.sliderContainer {
+  margin: 0 -12px;
+}
+
+.slideWrapper {
+  padding: 12px;
+}
+
+.offerCard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.offerCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  transition: opacity 0.3s ease;
+}
+
+.offerCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.offerCard:hover .offerImage {
+  transform: scale(1.08);
+}
+
+.priceTag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--warning-400);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(var(--warning-rgb), 0.3);
+}
+
+.oldPrice {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.newPrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.promotionalTag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.3);
+}
+
+.offerTitle {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  z-index: 2;
+  margin: 0;
+}
+.viewMoreBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--warning-200), var(--warning-400));
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.viewMoreBtn:hover {
+  background: linear-gradient(135deg, var(--warning-400), var(--warning-600));
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.viewMoreBtn:active {
+  transform: translateX(-50%) translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .offerCard {
+    height: 350px;
+  }
+
+  .offerTitle {
+    font-size: 1.5rem;
+    bottom: 70px;
+  }
+
+  .priceTag {
+    padding: 8px;
+  }
+
+  .newPrice {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,133 @@
+.Cart {}
+
+.cartContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartTable {
+  width: 100%;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+  color: #333;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.productImage {
+  width: 70px
+}
+.removeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  color: #ff0000;
+}
+
+.price, .subtotal {
+  color: #333;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  background: none;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity button:hover {
+  background: #f5f5f5;
+}
+
+.couponSection {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.couponSection input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+}
+
+.applyBtn, .updateCartBtn button {
+  background-color: #10235e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+
+.applyBtn:hover, .updateCartBtn button:hover {
+  background-color: #0d47a1;
+}
+.deleteBtn {
+  background-color: #890411;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.cartTotals {
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.totalsRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background-color: #10235e;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 9px;
+}
+
+.checkoutBtn:hover {
+  background-color: #0d47a1;
+  color: #10235e !important;
+}

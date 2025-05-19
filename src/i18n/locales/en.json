@@ -1,0 +1,29 @@
+{
+  "common": {
+    "search": "Search products...",
+    "priceRange": "Price Range",
+    "filterBy": "Filter By",
+    "allProducts": "All Products",
+    "latestProducts": "Latest Products",
+    "popularProducts": "Popular Products",
+    "saleProducts": "Sale Products"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "categories": "Categories",
+    "contact": "Contact",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "login": "Login",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "blog": "Blog",
+    "contactUs": "Contact Us",
+    "donation": "Donation"
+  },
+  "home": {
+    "featuredProducts": "Featured Products"
+  }
+} 

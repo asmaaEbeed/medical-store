@@ -1,0 +1,83 @@
+/* Container positioning */
+.float-donate-container {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  z-index: 999;
+}
+
+
+/* Modal header */
+.float-donate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #102F51;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  transition: all 0.rgb(35, 92, 153)
+}
+
+.close-button:hover {
+  color: #FCB77C;
+}
+
+
+
+.amount-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 45px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.amount-card:hover {
+  border-color: #102F51;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.donate-button-wrapper {
+  animation: pulse 2s infinite;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .float-donate-container {
+    top: 130px;
+  }
+  
+  .float-donate-modal {
+    width: 280px !important;
+  }
+  
+  .float-donate-button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .float-donate-container {
+    top: 120px; /* Adjusted for mobile view */
+    left: 5px; /* Adjusted for mobile view */
+  }
+
+  .float-donate-modal {
+    width: 80vw; /* Full width on mobile */
+    left: 5%; /* Centered on mobile */
+  }
+}

@@ -1,0 +1,79 @@
+.notFoundContainer {
+  text-align: center;
+ 
+  height: 80vh;
+}
+
+.errorCode {
+  font-size: 100px;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.errorMessage {
+  color: #6c757d;
+}
+
+.goHomeBtn {
+  background-color: var(--warning-400) !important; 
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  border-radius: 15px; 
+  display: none;
+}
+
+.transition-btn {
+  display: block;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: 2px solid var(--primary-1000);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  transition: all 0.25s;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.transition-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.transition-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--primary-900);
+  transition: all 0.35s;
+  border-radius: 0.5rem;
+}
+
+.transition-btn-orange-outline:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--secondary-50);
+  transition: all 0.35s;
+  border-radius: 0.5rem;
+  color: var(--warning-400);
+}
+
+.transition-btn:hover {
+  color: #fff;
+}
+
+.transition-btn-orange-outline:hover {
+  color: var(--warning-400) !important;
+}
+
+.transition-btn:hover:after {
+  width: 100%;
+  outline: 1px solid var(--warning-400);
+}

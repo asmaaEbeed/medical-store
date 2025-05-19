@@ -1,0 +1,283 @@
+/* Contact.module.css */
+.contactContainer {
+  padding: 3rem 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.heading {
+  color: var(--primary-900);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-900);
+  border-radius: 2px;
+}
+
+.description {
+  color: var(--secondary-600);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.contactDetails {
+  padding: 2.5rem;
+
+  border-radius: 15px;
+  height: 100%;
+}
+
+.subHeading {
+  color: var(--primary-900);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactInfo {
+  color: var(--secondary-600);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contactInfo:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo svg {
+  color: var(--primary-900);
+  font-size: 1.3rem;
+}
+
+.formContainer {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 15px;
+ 
+}
+
+.formHeading {
+  color: var(--primary-900);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.formHeading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-900);
+  border-radius: 2px;
+}
+
+.inputField {
+  padding: 1.2rem;
+  border: 2px solid rgba(19, 35, 84, 0.1);
+  border-radius: 10px;
+  background: white;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.inputField:focus {
+  border-color: var(--primary-900);
+  box-shadow: 0 0 0 0.2rem rgba(19, 35, 84, 0.1);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.inputField::placeholder {
+  color: var(--secondary-400);
+}
+
+/* Error states */
+.inputError {
+  border-color: #dc3545 !important;
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.errorText {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.submitButton {
+  background: var(--primary-900) !important;
+  border: none !important;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--primary-800) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(19, 35, 84, 0.2);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Loading spinner animation */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success message animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contactDetails,
+.formContainer {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Alert animations */
+:global(.alert) {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contactContainer {
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .formHeading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .formContainer,
+  .contactDetails {
+    padding: 1.5rem;
+  }
+
+  .contactInfo {
+    font-size: 1rem;
+  }
+
+  .inputField {
+    padding: 1rem;
+  }
+
+  .errorText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .formHeading {
+    font-size: 1.6rem;
+  }
+
+  .submitButton {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}

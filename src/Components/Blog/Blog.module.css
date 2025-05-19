@@ -1,0 +1,260 @@
+
+
+.heroSection {
+  margin-bottom: 3rem;
+}
+
+.slideWrapper {
+  position: relative;
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.slideWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  backdrop-filter: blur(5px);
+}
+
+.slideContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slideContent p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.featuredSection {
+  padding: 4rem 0;
+  background: white;
+  margin-top: -3rem;
+  
+}
+
+.sectionTitle {
+  color: var(--primary-900);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  background: var(--warning-400);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.mainArticle {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.mainArticle:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.mainArticle img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.articleContent {
+  padding: 2rem;
+}
+
+.articleContent h3 {
+  color: var(--primary-900);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.articleContent p {
+  color: var(--secondary-600);
+  line-height: 1.6;
+}
+
+.articleMeta {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--secondary-600);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.articleMeta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.relatedArticles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.relatedArticle {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.relatedArticle:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.relatedArticle img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.relatedContent {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.relatedContent h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-900);
+  font-weight: 600;
+}
+
+.readMoreBtn {
+  background: var(--primary-900);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.readMoreBtn:hover {
+  background: var(--primary-800);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(var(--primary-900-rgb), 0.3);
+}
+
+@media (max-width: 992px) {
+  .slideWrapper {
+    height: 400px;
+  }
+
+  .slideContent h2 {
+    font-size: 2rem;
+  }
+
+  .mainArticle {
+    margin-bottom: 2rem;
+  }
+
+  .relatedArticle img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .relatedContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slideWrapper {
+    height: 300px;
+  }
+
+  .slideContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .slideContent p {
+    font-size: 1rem;
+  }
+
+  .relatedArticle {
+    flex-direction: column;
+  }
+
+  .relatedArticle img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.articleModal :global(.modal-content) {
+  border-radius: 20px;
+  border: none;
+}
+
+.modalTitle {
+  color: var(--primary-900);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.modalContent {
+  padding: 1rem;
+}
+
+.modalImage {
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.modalMeta {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--secondary-600);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.modalText {
+  color: var(--secondary-800);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.modalText p {
+  margin-bottom: 1.5rem;
+}
