@@ -1,6 +1,6 @@
 import React, { useContext} from 'react'
 import { Row, Col, Card, Button } from 'react-bootstrap';
-import style from './Wishlist.module.css';
+import style from './WishList.module.css';
 import { FiShoppingCart, FiTrash2 } from 'react-icons/fi';
 import CartContext from '../../shop/CartContext';
 import { toast } from 'react-toastify';
