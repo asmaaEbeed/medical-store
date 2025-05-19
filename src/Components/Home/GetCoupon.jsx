@@ -4,7 +4,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import CoupounModal from './CoupounModal';
 import CouponContext from '../../shop/CouponContext';
 import { Sparkles, Gift, Scissors, Tag, Clock } from 'lucide-react';
-import './GetCoupon.css';
+import './getcoupon.css';
 import { useNavigate } from 'react-router-dom';
 
 const GetCoupon = () => {
