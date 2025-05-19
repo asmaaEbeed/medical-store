@@ -6,7 +6,7 @@ import CartContext from '../../shop/CartContext';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
-import style from './Wishlist.module.css';
+import style from './WishList.module.css';
 // Import context
 import WishListContext from '../../shop/WishListContext';
 import UserContext from '../../shop/UserContext';
@@ -83,7 +83,7 @@ export default function Wishlist() {
             </span>
           </div>
         </Col>
-        <Card>
+        <Card className="border-0 shadow-sm">
           <Card.Body>
 
             <WishListSections wishlistItems={wishlistItems} removeItemFromWishlist={removeItemFromWishlist} colSize={3}/>

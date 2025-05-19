@@ -67,7 +67,7 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--text-color);
+  color: #5e5e5e;
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
@@ -132,7 +132,7 @@
 
 .productCard {
   position: relative;
-  background-color: var(--card-bg);
+  background-color: #fff;
   border-radius: var(--card-radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -141,6 +141,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .productCard:hover {
@@ -316,7 +317,7 @@
 .productName {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: #575757;
   margin-bottom: 1rem;
   line-height: 1.4;
   display: -webkit-box;
@@ -534,7 +535,7 @@
   }
   
   .productImageContainer {
-    background-color: #222;
+    /* background-color: #222; */
   }
   
   .wishlistButton {
